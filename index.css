@@ -292,7 +292,7 @@ a{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 93%;
     padding: 5% 0;
     justify-content: space-between;
 }
@@ -313,7 +313,7 @@ a{
 
 .wrapper .section2 .main a{
     border: solid 0.8px rgb(192, 192, 192, 0.6);
-    width: 330px;
+    width: 340px;
     height: 400px;
     border-radius: 3px;
     transition: 300ms;
@@ -341,7 +341,7 @@ a{
     height: 50%;
     /* border: solid gray; */
     width: 100%;
-    padding: 10px;
+    padding: 10px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -437,7 +437,7 @@ a{
 .wrapper .section3 .main{
     /* border: 1px solid silver; */
     margin: 0 auto;
-    width: 83%;
+    width: 86%;
     
 }
 
@@ -445,12 +445,14 @@ a{
     display: flex;
     flex-direction: column;
     width: 100%;
+    /* overflow: auto; */
 }
 
 .wrapper .section3 .main .reviews .flex{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    /* width: 100%; */
+    align-items: center;
     margin-bottom: 5%;
 }
 
@@ -464,6 +466,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
 }
 
 .wrapper .section3 .main .reviews .span .image{
@@ -594,6 +597,45 @@ a{
         display: block;
     }
     
+    .wrapper .section3 .main{
+        /* border: 1px solid silver; */
+        margin: 0 auto;
+        width: 90%;
+        
+    }
+
+    .wrapper .section3 .main .reviews{
+        /* width: 1000px; */
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .wrapper .section3 .main .reviews::-webkit-scrollbar{
+        display: none;
+    }
+
+    .wrapper .section3 .main .reviews .flex{
+        width: 2000px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-content: left;
+    }
+
+    .wrapper .section3 .main .reviews .flex::-webkit-scrollbar{
+        display: none;
+    }
+
+
+    .wrapper .section3 .main .reviews .flex .span{
+        margin-right: 30px;
+        border: 1px solid silver;
+        padding-top: -20px;
+        display: block;
+        width: 90vw;
+        height: 350px;
+    }
+
+
 
 }
 
