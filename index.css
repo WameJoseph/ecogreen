@@ -739,6 +739,7 @@ a{
         position: absolute;
         left: 20%;
         margin-top: 5%;
+        filter: blur(10px);
     }
     
     .wrapper .section1 .background img{
