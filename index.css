@@ -1198,20 +1198,22 @@ footer .list .span1 .sp .sub:hover{
     }
     
     footer .newsletter form{
+        width: 100%;
         margin-top: 10px;
         margin-left: 0;
         display: flex;
+        justify-content: center;
     }
     
     footer .newsletter form input[type=text]{
-        height: 50px;
-        width: 80%;
+        height: 40px;
+        width: 60%;
         font-size: 16px;
         padding: 0 10px;
     }
     
     footer .newsletter form input[type=submit]{
-        height: 50px;
+        height: 40px;
         width: 75px;
         /* display: flex; */
         /* text-align: center; */
@@ -1227,7 +1229,32 @@ footer .list .span1 .sp .sub:hover{
     footer .list .span1{
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 90%;
         margin-top: 10%;
+    }
+
+    footer .list .span1 .sp .cover{
+        font-size: 20px;
+        color: #41B3A3;
+        font-weight: 600;
+    }
+    
+    footer .list .span1 .sp .cover:hover{
+        color: #41B3A3;
+        font-weight: 700;
+    }
+    
+    footer .list .span1 .sp .sub{
+        display: flex;
+        /* flex-direction: column; */
+        /* border: solid 1px white; */
+        width: fit-content;
+        margin-right: auto;
+        justify-content: left;
+        align-items: center;
+        margin-top: 5px;
+        font-size: 13px;
+        color: #ffff;
+        font-weight: 500;
     }
 }
